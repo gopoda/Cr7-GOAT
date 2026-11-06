@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 — Palmarés Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Carga previa del tema -->
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var theme = params.get('theme');
+            if (!theme) {
+                try { theme = localStorage.getItem('theme'); } catch(e) {}
+            }
+            if (theme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Checkbox oculto de control de tema -->
+    <input type="checkbox" id="theme-switch" autocomplete="off" hidden>
+
+    <div class="site-wrapper">
+
+        <header>
+            <div>
+                <h1>CR7 <span>G.O.A.T</span></h1>
+                <p>Registro Histórico Oficial</p>
+            </div>
+            <label for="theme-switch" class="theme-btn">Modo Claro / Oscuro</label>
+        </header>
+
+        <!-- Navegación principal -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="goles.html">Goles y Métricas</a></li>
+                <li><a href="palmares.html" class="active">Palmarés</a></li>
+            </ul>
+        </nav>
+
+        <!-- Índice interno de esta sección -->
+        <nav class="sub-nav" aria-label="Índice de contenido">
+            <ul>
+                <li><a href="#clubes">Títulos Colectivos de Clubes</a></li>
+                <li><a href="#seleccion">Títulos Selección</a></li>
+                <li><a href="#individuales">Galardones Individuales</a></li>
+                <li><a href="#records">Récords Históricos Mundiales</a></li>
+            </ul>
+        </nav>
+
+        <main class="layout-body">
+
+            <div class="main-content">
+
+                <div class="page-category-title">PALMARÉS</div>
+
+                <section id="clubes" class="card-section">
+                    <h2>Títulos Colectivos de <span>Clubes</span></h2>
+                    <p>Palmarés completo compuesto por 33 trofeos oficiales a nivel de club:</p>
+                    <div class="data-table">
+                        <div class="table-row"><span>UEFA Champions League</span><strong>5 (1 Man Utd, 4 Real Madrid)</strong></div>
+                        <div class="table-row"><span>Mundial de Clubes de la FIFA</span><strong>4 (1 Man Utd, 3 Real Madrid)</strong></div>
+                        <div class="table-row"><span>Supercopa de Europa de la UEFA</span><strong>3 (Real Madrid)</strong></div>
+                        <div class="table-row"><span>Premier League (Inglaterra)</span><strong>3 (Manchester United)</strong></div>
+                        <div class="table-row"><span>LaLiga Santander (España)</span><strong>2 (Real Madrid)</strong></div>
+                        <div class="table-row"><span>Serie A TIM (Italia)</span><strong>2 (Juventus)</strong></div>
+                        <div class="table-row"><span>Copas Domésticas (Copa del Rey, FA Cup, Coppa Italia)</span><strong>6 Títulos</strong></div>
+                        <div class="table-row"><span>Supercopas Nacionales (Inglaterra, España, Italia, Portugal)</span><strong>8 Títulos</strong></div>
+                    </div>
+                </section>
+
+                <div class="img-banner">
+                    <img src="palmares1.jpg" alt="Champions League">
+                </div>
+
+                <section id="seleccion" class="card-section">
+                    <h2>Títulos con la <span>Selección de Portugal</span></h2>
+                    <p>Trofeos oficiales obtenidos con la selección absoluta:</p>
+                    <div class="data-table">
+                        <div class="table-row"><span>Eurocopa de la UEFA</span><strong>1 Título (Francia 2016)</strong></div>
+                        <div class="table-row"><span>UEFA Nations League</span><strong>1 Título (Portugal 2019)</strong></div>
+                    </div>
+                </section>
+
+                <div class="img-banner">
+                    <img src="palmares2.jpg" alt="Eurocopa Portugal">
+                </div>
+
+                <section id="individuales" class="card-section">
+                    <h2>Galardones <span>Individuales</span></h2>
+                    <p>Principales reconocimientos individuales concedidos por la FIFA, UEFA y France Football:</p>
+                    <div class="data-table">
+                        <div class="table-row"><span>Balón de Oro / FIFA Balón de Oro</span><strong>5 (2008, 2013, 2014, 2016, 2017)</strong></div>
+                        <div class="table-row"><span>Bota de Oro Europea</span><strong>4 (2008, 2011, 2014, 2015)</strong></div>
+                        <div class="table-row"><span>Premio FIFA The Best</span><strong>2 (2016, 2017)</strong></div>
+                        <div class="table-row"><span>Jugador del Año de la UEFA</span><strong>3 (2014, 2016, 2017)</strong></div>
+                        <div class="table-row"><span>Máximo Goleador UEFA Champions League</span><strong>7 Temporadas</strong></div>
+                    </div>
+                </section>
+
+                <div class="img-banner">
+                    <img src="palmares3.jpg" alt="Balones de Oro">
+                </div>
+
+                <section id="records" class="card-section">
+                    <h2>Récords <span>Históricos Mundiales</span></h2>
+                    
+                    <!-- Tarjeta con borde izquierdo dorado -->
+                    <div class="info-card">
+                        <h3>Máximo Goleador Mundial de Selecciones</h3>
+                        <p>Líder histórico de goles internacionales con selecciones masculinas, superando la marca previa de Ali Daei (109).</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Récords en UEFA Champions League</h3>
+                        <p>Máximo goleador histórico del torneo (140 goles), máximo asistente histórico (42 asistencias) y récord de goles en una misma edición (17 goles en la temporada 2013/14).</p>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar lateral -->
+            <aside class="sidebar">
+                <div class="widget category-widget">
+                    <a href="index.html" class="category-card">
+                        <img src="cat_inicio.jpg" alt="Inicio">
+                        <span class="category-title">Inicio</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="goles.html" class="category-card">
+                        <img src="cat_goles.jpg" alt="Goles y Métricas">
+                        <span class="category-title">Goles y Métricas</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="palmares.html" class="category-card">
+                        <img src="cat_palmares.jpg" alt="Palmarés">
+                        <span class="category-title">Palmarés</span>
+                    </a>
+                </div>
+
+                <div class="widget">
+                    <h3>Trofeos Principales</h3>
+                    <ul>
+                        <li><span>Balones de Oro:</span> <strong>5</strong></li>
+                        <li><span>Champions League:</span> <strong>5</strong></li>
+                        <li><span>Botas de Oro:</span> <strong>4</strong></li>
+                        <li><span>Títulos Selección:</span> <strong>2</strong></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Distribución de Títulos</h3>
+                    <ul>
+                        <li><span>Real Madrid:</span> <strong>16 trofeos</strong></li>
+                        <li><span>Manchester United:</span> <strong>10 trofeos</strong></li>
+                        <li><span>Juventus FC:</span> <strong>5 trofeos</strong></li>
+                        <li><span>Portugal:</span> <strong>2 trofeos</strong></li>
+                        <li><span>Sporting CP:</span> <strong>1 trofeo</strong></li>
+                    </ul>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://www.youtube.com/@cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="youtube.jpg" alt="YouTube">
+                        <span class="category-title">YouTube</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://www.instagram.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="instagram.jpg" alt="Instagram">
+                        <span class="category-title">Instagram</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://x.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="twitter.jpg" alt="Twitter">
+                        <span class="category-title">Twitter</span>
+                    </a>
+                </div>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>&copy; Registro Histórico CR7. Publicado en GitHub Pages.</p>
+        </footer>
+
+    </div>
+
+    <!-- Script de sincronización de tema -->
+    <script>
+        (function() {
+            var switchEl = document.getElementById('theme-switch');
+            
+            function isLight() {
+                return document.documentElement.getAttribute('data-theme') === 'light';
+            }
+
+            function setTheme(light) {
+                if (light) {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    try { localStorage.setItem('theme', 'light'); } catch(e) {}
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                    try { localStorage.setItem('theme', 'dark'); } catch(e) {}
+                }
+                if (switchEl) switchEl.checked = light;
+            }
+
+            if (switchEl) {
+                switchEl.checked = isLight();
+                switchEl.addEventListener('change', function() {
+                    setTheme(this.checked);
+                });
+            }
+
+            document.addEventListener('click', function(e) {
+                var link = e.target.closest('a[href]');
+                if (!link) return;
+                var href = link.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.startsWith('//') && !href.startsWith('#')) {
+                    var currentTheme = isLight() ? 'light' : 'dark';
+                    var parts = href.split('#');
+                    var path = parts[0].split('?')[0];
+                    var hash = parts[1] ? '#' + parts[1] : '';
+                    link.href = path + '?theme=' + currentTheme + hash;
+                }
+            });
+        })();
+    </script>
+
+</body>
+</html>

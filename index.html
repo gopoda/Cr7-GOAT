@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 — Inicio e Historia</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Carga previa del tema para evitar parpadeos -->
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var theme = params.get('theme');
+            if (!theme) {
+                try { theme = localStorage.getItem('theme'); } catch(e) {}
+            }
+            if (theme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Checkbox oculto de control de tema -->
+    <input type="checkbox" id="theme-switch" autocomplete="off" hidden>
+
+    <!-- Contenedor principal de la web (máx 1000px) -->
+    <div class="site-wrapper">
+
+        <!-- Cabecera e interruptor -->
+        <header>
+            <div>
+                <h1>CR7 <span>G.O.A.T</span></h1>
+                <p>Registro Histórico Oficial</p>
+            </div>
+            <!-- Etiqueta vinculada al checkbox por id -->
+            <label for="theme-switch" class="theme-btn">Modo Claro / Oscuro</label>
+        </header>
+
+        <!-- Menú principal entre páginas -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="goles.html">Goles y Métricas</a></li>
+                <li><a href="palmares.html">Palmarés</a></li>
+            </ul>
+        </nav>
+
+        <!-- Índice de sección interna (anclas) -->
+        <nav class="sub-nav" aria-label="Índice de contenido">
+            <ul>
+                <li><a href="#resumen">Resumen General de Carrera</a></li>
+                <li><a href="#etapas">Etapas por Club y Selección</a></li>
+            </ul>
+        </nav>
+
+        <!-- Cuadrícula principal (Contenido + Sidebar) -->
+        <main class="layout-body">
+
+            <div class="main-content">
+
+                <div class="page-category-title">INICIO</div>
+
+                <section id="resumen" class="card-section">
+                    <h2>Resumen General de <span>Carrera</span></h2>
+                    <p>Cristiano Ronaldo dos Santos Aveiro es el máximo goleador en la historia del fútbol profesional masculino. Su trayectoria profesional abarca más de dos décadas en la élite internacional, acumulando más de 900 goles oficiales registrados en competiciones de clubes y selección absoluta.</p>
+                    <p>A lo largo de su carrera ha conquistado títulos nacionales en tres de las cinco grandes ligas europeas (Inglaterra, España e Italia), consagrándose como el único jugador en haber obtenido la liga, copa, supercopa, Balón de Oro y Champions League en dos clubes distintos.</p>
+                </section>
+
+                <section id="etapas" class="card-section">
+                    <h2>Etapas por Club y <span>Selección</span></h2>
+                    
+                    <div class="info-card">
+                        <h3>1. Sporting C. P. (2002 - 2003)</h3>
+                        <p>Debut profesional en la Primeira Liga de Portugal tras formarse en la academia de Alcochete. Su actuación destacada en la inauguración del estadio José Alvalade ante el Manchester United precipitó su fichaje inmediato por el club inglés.</p>
+                    </div>
+
+                    <div class="img-banner">
+                        <img src="sporting.jpg" alt="Sporting CP">
+                    </div>
+
+                    <div class="info-card">
+                        <h3>2. Manchester United F. C. — Primera Etapa (2003 - 2009)</h3>
+                        <p>Bajo la tutela de Sir Alex Ferguson, evolucionó de extremo de banda desequilibrante a figura mundial. Conquistó tres Premier League consecutivas, una UEFA Champions League, un Mundial de Clubes y su primer Balón de Oro en 2008.</p>
+                    </div>
+
+                    <div class="img-banner">
+                        <img src="manchester.jpg" alt="Manchester United primera etapa">
+                    </div>
+
+                    <div class="info-card">
+                        <h3>3. Real Madrid C. F. (2009 - 2018)</h3>
+                        <p>Cénit de su carrera profesional, convirtiéndose en el máximo goleador histórico del club blanco con 450 goles en 438 partidos oficiales. Conquistó cuatro títulos de la UEFA Champions League, dos Ligas, dos Copas del Rey y cuatro Balones de Oro en la capital española.</p>
+                    </div>
+
+                    <div class="img-banner">
+                        <img src="realmadrid.jpg" alt="Real Madrid">
+                    </div>
+
+                    <div class="info-card">
+                        <h3>4. Juventus F. C. (2018 - 2021)</h3>
+                        <p>Traslado a la Serie A italiana, anotando 101 goles en 134 partidos con la camiseta bianconera. Obtuvo dos scudettos de Serie A, una Coppa Italia y dos Supercoppas, siendo el jugador más rápido en alcanzar los 100 goles en la historia del club de Turín.</p>
+                    </div>
+
+                    <div class="img-banner">
+                        <img src="juventus.jpg" alt="Juventus">
+                    </div>
+
+                    <div class="info-card">
+                        <h3>5. Manchester United F. C. — Segunda Etapa (2021 - 2022)</h3>
+                        <p>Retorno al fútbol inglés con los 'Red Devils'. A pesar de la etapa de transición del equipo, aportó 24 goles en 39 partidos oficiales durante la temporada 2021/22, incluyendo hat-tricks decisivos en Premier League y goles clave en UEFA Champions League.</p>
+                    </div>
+
+                    <div class="img-banner">
+                        <img src="manchester2.jpg" alt="Manchester United segunda etapa">
+                    </div>
+
+                    <div class="info-card">
+                        <h3>6. Al-Nassr F. C. (2023 - Presente)</h3>
+                        <p>Paso al fútbol asiático en la Saudi Pro League, estableciendo récords de efectividad goleadora en la liga saudí y liderando al equipo en torneos continentales con más de 70 tantos convertidos.</p>
+                    </div>
+
+                    <div class="img-banner">
+                        <img src="alnassr.jpg" alt="Al-Nassr">
+                    </div>
+
+                    <div class="info-card">
+                        <h3>7. Selección Absoluta de Portugal (2003 - Presente)</h3>
+                        <p>Capitán y máximo goleador histórico de todas las selecciones masculinas del mundo. Ha disputado cinco Copas del Mundo y seis Eurocopas, liderando a Portugal hacia la conquista de la Eurocopa 2016 y la UEFA Nations League 2019.</p>
+                    </div>
+
+                    <div class="img-banner">
+                        <img src="portugal.jpg" alt="Selección Portugal">
+                    </div>
+                </section>
+            </div>
+
+            <!-- Barra lateral (Sidebar) -->
+            <aside class="sidebar">
+                <div class="widget category-widget">
+                    <a href="index.html" class="category-card">
+                        <img src="cat_inicio.jpg" alt="Inicio">
+                        <span class="category-title">Inicio</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="goles.html" class="category-card">
+                        <img src="cat_goles.jpg" alt="Goles y Métricas">
+                        <span class="category-title">Goles y Métricas</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="palmares.html" class="category-card">
+                        <img src="cat_palmares.jpg" alt="Palmarés">
+                        <span class="category-title">Palmarés</span>
+                    </a>
+                </div>
+
+                <div class="widget">
+                    <h3>Ficha Técnica</h3>
+                    <ul>
+                        <li><span>Nombre:</span> <strong>Cristiano Ronaldo</strong></li>
+                        <li><span>Nacimiento:</span> <strong>5 de febrero de 1985</strong></li>
+                        <li><span>Lugar:</span> <strong>Funchal, Madeira (Portugal)</strong></li>
+                        <li><span>Posición:</span> <strong>Delantero Centro</strong></li>
+                        <li><span>Debut Profesional:</span> <strong>2002</strong></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Cómputo Rápido</h3>
+                    <ul>
+                        <li><span>Goles Oficiales:</span> <strong>900+</strong></li>
+                        <li><span>Partidos Jugados:</span> <strong>1.250+</strong></li>
+                        <li><span>Asistencias:</span> <strong>250+</strong></li>
+                        <li><span>Títulos Colectivos:</span> <strong>35</strong></li>
+                    </ul>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://www.youtube.com/@cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="youtube.jpg" alt="YouTube">
+                        <span class="category-title">YouTube</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://www.instagram.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="instagram.jpg" alt="Instagram">
+                        <span class="category-title">Instagram</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://x.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="twitter.jpg" alt="Twitter">
+                        <span class="category-title">Twitter</span>
+                    </a>
+                </div>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>&copy; Registro Histórico CR7. Publicado en GitHub Pages.</p>
+        </footer>
+
+    </div>
+
+    <!-- Script de guardado en localStorage y paso del tema por enlace URL -->
+    <script>
+        (function() {
+            var switchEl = document.getElementById('theme-switch');
+            
+            function isLight() {
+                return document.documentElement.getAttribute('data-theme') === 'light';
+            }
+
+            function setTheme(light) {
+                if (light) {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    try { localStorage.setItem('theme', 'light'); } catch(e) {}
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                    try { localStorage.setItem('theme', 'dark'); } catch(e) {}
+                }
+                if (switchEl) switchEl.checked = light;
+            }
+
+            if (switchEl) {
+                switchEl.checked = isLight();
+                switchEl.addEventListener('change', function() {
+                    setTheme(this.checked);
+                });
+            }
+
+            // Añade '?theme=light' o '?theme=dark' a enlaces locales antes de navegar
+            document.addEventListener('click', function(e) {
+                var link = e.target.closest('a[href]');
+                if (!link) return;
+                var href = link.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.startsWith('//') && !href.startsWith('#')) {
+                    var currentTheme = isLight() ? 'light' : 'dark';
+                    var parts = href.split('#');
+                    var path = parts[0].split('?')[0];
+                    var hash = parts[1] ? '#' + parts[1] : '';
+                    link.href = path + '?theme=' + currentTheme + hash;
+                }
+            });
+        })();
+    </script>
+
+</body>
+</html>

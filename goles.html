@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR7 — Goles y Métricas</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Carga previa del tema -->
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var theme = params.get('theme');
+            if (!theme) {
+                try { theme = localStorage.getItem('theme'); } catch(e) {}
+            }
+            if (theme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- Checkbox oculto de control de tema -->
+    <input type="checkbox" id="theme-switch" autocomplete="off" hidden>
+
+    <div class="site-wrapper">
+
+        <header>
+            <div>
+                <h1>CR7 <span>G.O.A.T</span></h1>
+                <p>Registro Histórico Oficial</p>
+            </div>
+            <label for="theme-switch" class="theme-btn">Modo Claro / Oscuro</label>
+        </header>
+
+        <!-- Navegación principal -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="goles.html" class="active">Goles y Métricas</a></li>
+                <li><a href="palmares.html">Palmarés</a></li>
+            </ul>
+        </nav>
+
+        <!-- Índice interno de esta sección -->
+        <nav class="sub-nav" aria-label="Índice de contenido">
+            <ul>
+                <li><a href="#remate">Superficie de Remate</a></li>
+                <li><a href="#jugada">Tipo de Jugada</a></li>
+                <li><a href="#equipos">Distribución por Equipos</a></li>
+                <li><a href="#multiples">Partidos con Múltiples Goles</a></li>
+                <li><a href="#biomecanica">Métricas Biomecánicas</a></li>
+            </ul>
+        </nav>
+
+        <main class="layout-body">
+
+            <div class="main-content">
+
+                <div class="page-category-title">GOLES Y MÉTRICAS</div>
+
+                <section id="remate" class="card-section">
+                    <h2>Desglose por <span>Superficie de Remate</span></h2>
+                    <p>Distribución analítica del total de goles convertidos según la superficie del remate en partido oficial:</p>
+
+                    <!-- Tabla de datos (Label + Valor) -->
+                    <div class="data-table">
+                        <div class="table-row"><span>Pie Derecho</span><strong>570+ goles (~62%)</strong></div>
+                        <div class="table-row"><span>Pie Izquierdo</span><strong>170+ goles (~19%)</strong></div>
+                        <div class="table-row"><span>Cabeza</span><strong>150+ goles (~16%)</strong></div>
+                        <div class="table-row"><span>Otros (Otras superficies)</span><strong>2 goles (&lt;1%)</strong></div>
+                    </div>
+                </section>
+
+                <div class="img-banner">
+                    <img src="goles1.jpg" alt="Remate de Gol">
+                </div>
+
+                <section id="jugada" class="card-section">
+                    <h2>Tipo de Jugada y <span>Posicionamiento</span></h2>
+                    <p>Clasificación del registro goleador en función del origen del remate y la distancia respecto a la portería rival:</p>
+                    <div class="data-table">
+                        <div class="table-row"><span>Dentro del Área Chica / Grande</span><strong>740+ goles</strong></div>
+                        <div class="table-row"><span>Fuera del Área</span><strong>160+ goles</strong></div>
+                        <div class="table-row"><span>Penaltis Convertidos</span><strong>168 goles</strong></div>
+                        <div class="table-row"><span>Tiros Libres Directos</span><strong>64 goles</strong></div>
+                    </div>
+                </section>
+
+                <div class="img-banner">
+                    <img src="goles2.jpg" alt="Celebración de Gol">
+                </div>
+
+                <section id="equipos" class="card-section">
+                    <h2>Distribución por <span>Equipos</span></h2>
+                    <p>Goles oficiales desglosados según la camiseta defendida:</p>
+                    <div class="data-table">
+                        <div class="table-row"><span>Real Madrid C. F.</span><strong>450 goles (438 partidos)</strong></div>
+                        <div class="table-row"><span>Manchester United F. C.</span><strong>145 goles (346 partidos)</strong></div>
+                        <div class="table-row"><span>Selección Absoluta de Portugal</span><strong>133+ goles (216+ partidos)</strong></div>
+                        <div class="table-row"><span>Juventus F. C.</span><strong>101 goles (134 partidos)</strong></div>
+                        <div class="table-row"><span>Al-Nassr F. C.</span><strong>70+ goles</strong></div>
+                        <div class="table-row"><span>Sporting C. P.</span><strong>5 goles (31 partidos)</strong></div>
+                    </div>
+                </section>
+
+                <div class="img-banner">
+                    <img src="goles3.jpg" alt="Tiro Libre Directo">
+                </div>
+
+                <section id="multiples" class="card-section">
+                    <h2>Partidos con <span>Múltiples Goles</span></h2>
+                    <p>Frecuencia de actuaciones con dos o más tantos en un mismo encuentro:</p>
+                    <div class="data-table">
+                        <div class="table-row"><span>Dobletes (2 goles)</span><strong>200+ partidos</strong></div>
+                        <div class="table-row"><span>Hat-Tricks (3 goles)</span><strong>66 partidos</strong></div>
+                        <div class="table-row"><span>Pókers (4 goles)</span><strong>11 partidos</strong></div>
+                        <div class="table-row"><span>Repókers (5 goles)</span><strong>2 partidos</strong></div>
+                    </div>
+                </section>
+
+                <section id="biomecanica" class="card-section">
+                    <h2>Métricas Biomecánicas y <span>Condición Física</span></h2>
+                    <p>La longevidad de su carrera deportiva responde a una métrica física óptima analizada en estudios científicos:</p>
+                    <div class="data-table">
+                        <div class="table-row"><span>Salto Vertical Máximo</span><strong>2,93 m (vs Man Utd, 2013)</strong></div>
+                        <div class="table-row"><span>Tiempo de Suspensión en Aire</span><strong>0,92 segundos</strong></div>
+                        <div class="table-row"><span>Velocidad Punta Registrada</span><strong>38,6 km/h</strong></div>
+                        <div class="table-row"><span>Masa Grasa Promedio</span><strong>7% (promedio profesional: 10-11%)</strong></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar lateral -->
+            <aside class="sidebar">
+                <div class="widget category-widget">
+                    <a href="index.html" class="category-card">
+                        <img src="cat_inicio.jpg" alt="Inicio">
+                        <span class="category-title">Inicio</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="goles.html" class="category-card">
+                        <img src="cat_goles.jpg" alt="Goles y Métricas">
+                        <span class="category-title">Goles y Métricas</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="palmares.html" class="category-card">
+                        <img src="cat_palmares.jpg" alt="Palmarés">
+                        <span class="category-title">Palmarés</span>
+                    </a>
+                </div>
+
+                <div class="widget">
+                    <h3>Principales Víctimas</h3>
+                    <ul>
+                        <li><span>Sevilla FC:</span> <strong>27 goles</strong></li>
+                        <li><span>Atlético de Madrid:</span> <strong>25 goles</strong></li>
+                        <li><span>Getafe CF:</span> <strong>23 goles</strong></li>
+                        <li><span>Celta de Vigo:</span> <strong>20 goles</strong></li>
+                        <li><span>FC Barcelona:</span> <strong>20 goles</strong></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Promedios Destacados</h3>
+                    <ul>
+                        <li><span>Promedio Real Madrid:</span> <strong>1,03 / partido</strong></li>
+                        <li><span>Promedio Juventus:</span> <strong>0,75 / partido</strong></li>
+                        <li><span>Promedio Global:</span> <strong>~0,73 / partido</strong></li>
+                    </ul>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://www.youtube.com/@cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="youtube.jpg" alt="YouTube">
+                        <span class="category-title">YouTube</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://www.instagram.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="instagram.jpg" alt="Instagram">
+                        <span class="category-title">Instagram</span>
+                    </a>
+                </div>
+
+                <div class="widget category-widget">
+                    <a href="https://x.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
+                        <img src="twitter.jpg" alt="Twitter">
+                        <span class="category-title">Twitter</span>
+                    </a>
+                </div>
+            </aside>
+
+        </main>
+
+        <footer>
+            <p>&copy; Registro Histórico CR7. Publicado en GitHub Pages.</p>
+        </footer>
+
+    </div>
+
+    <!-- Script de sincronización de tema -->
+    <script>
+        (function() {
+            var switchEl = document.getElementById('theme-switch');
+            
+            function isLight() {
+                return document.documentElement.getAttribute('data-theme') === 'light';
+            }
+
+            function setTheme(light) {
+                if (light) {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    try { localStorage.setItem('theme', 'light'); } catch(e) {}
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                    try { localStorage.setItem('theme', 'dark'); } catch(e) {}
+                }
+                if (switchEl) switchEl.checked = light;
+            }
+
+            if (switchEl) {
+                switchEl.checked = isLight();
+                switchEl.addEventListener('change', function() {
+                    setTheme(this.checked);
+                });
+            }
+
+            document.addEventListener('click', function(e) {
+                var link = e.target.closest('a[href]');
+                if (!link) return;
+                var href = link.getAttribute('href');
+                if (href && !href.startsWith('http') && !href.startsWith('//') && !href.startsWith('#')) {
+                    var currentTheme = isLight() ? 'light' : 'dark';
+                    var parts = href.split('#');
+                    var path = parts[0].split('?')[0];
+                    var hash = parts[1] ? '#' + parts[1] : '';
+                    link.href = path + '?theme=' + currentTheme + hash;
+                }
+            });
+        })();
+    </script>
+
+</body>
+</html>
