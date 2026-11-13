@@ -1,33 +1,19 @@
-/* Variables por defecto (Modo Oscuro) */
 :root {
-    --bg-main: #040406;                     /* Fondo general */
-    --bg-card: rgba(15, 15, 20, 0.9);       /* Fondo de tarjetas */
-    --bg-sidebar: rgba(20, 20, 28, 0.95);   /* Fondo widgets laterales */
-    --text-primary: #ffffff;                /* Texto principal */
-    --text-muted: #d1d5db;                  /* Texto secundario */
-    --accent-gold: #fbbf24;                 /* Color dorado de contraste */
-    --border-color: rgba(255, 255, 255, 0.15); /* Bordes */
-}
-
-/* Sobrescritura de variables cuando se activa el Modo Claro */
-:root[data-theme="light"] {
     --bg-main: #f3f4f6;
     --bg-card: #ffffff;
     --bg-sidebar: #e5e7eb;
     --text-primary: #111827;
     --text-muted: #374151;
-    --accent-gold: #d97706;                 /* Dorado más oscuro para fondo claro */
+    --accent-gold: #d97706;
     --border-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Reset de márgenes y box-sizing global */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Desplazamiento suave al pulsar en anclas (#) */
 html {
     scroll-behavior: smooth;
 }
@@ -40,14 +26,12 @@ body {
     min-height: 100vh;
 }
 
-/* Contenedor central limitado a 1000px */
 .site-wrapper {
     max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-/* Cabecera principal */
 header {
     display: flex;
     justify-content: space-between;
@@ -73,10 +57,9 @@ header p {
     color: var(--text-muted);
 }
 
-/* Botón de cambio de tema */
 .theme-btn {
     padding: 0.5rem 1rem;
-    background: var(--accent-gold);
+    background: #fbbf24;
     color: #000000;
     font-weight: 700;
     font-size: 0.8rem;
@@ -86,12 +69,6 @@ header p {
     transition: background 0.2s ease, color 0.2s ease;
 }
 
-:root[data-theme="light"] .theme-btn {
-    background: #fbbf24;
-    color: #000000;
-}
-
-/* Menú principal de páginas */
 .main-nav {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -117,7 +94,6 @@ header p {
     font-weight: bold;
 }
 
-/* Índice secundario de anclas */
 .sub-nav {
     background: var(--bg-sidebar);
     border: 1px solid var(--border-color);
@@ -145,7 +121,6 @@ header p {
     text-decoration: underline;
 }
 
-/* Título superior de la categoría actual */
 .page-category-title {
     color: var(--accent-gold);
     font-size: 2.2rem;
@@ -155,7 +130,6 @@ header p {
     text-transform: uppercase;
 }
 
-/* Rejilla de layout: 1 col en móvil, 2 col en PC (>=768px) */
 .layout-body {
     display: grid;
     grid-template-columns: 1fr;
@@ -168,7 +142,6 @@ header p {
     }
 }
 
-/* Tarjetas de sección */
 .card-section {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -194,7 +167,6 @@ header p {
     margin-bottom: 0.75rem;
 }
 
-/* Tarjetas con borde izquierdo dorado */
 .info-card {
     background: rgba(0, 0, 0, 0.05);
     border-left: 3px solid var(--accent-gold);
@@ -214,7 +186,6 @@ header p {
     font-size: 0.9rem;
 }
 
-/* Filas de tablas flexbox */
 .data-table {
     margin-top: 0.75rem;
 }
@@ -236,7 +207,6 @@ header p {
     font-weight: 600;
 }
 
-/* Contenedores de imágenes ajustadas */
 .img-banner {
     width: 100%;
     height: 330px;
@@ -246,7 +216,6 @@ header p {
     border: 1px solid var(--border-color);
 }
 
-/* 'object-fit: cover' escala sin deformar la imagen */
 .img-banner img {
     width: 100%;
     height: 100%;
@@ -254,7 +223,6 @@ header p {
     display: block;
 }
 
-/* Barra lateral */
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -282,7 +250,7 @@ header p {
     height: 170px;
     overflow: hidden;
     text-decoration: none;
-    background-color: #1a1a24;
+    background-color: #d1d5db;
 }
 
 .category-card img {
@@ -293,7 +261,6 @@ header p {
     transition: transform 0.3s ease;
 }
 
-/* Zoom suave en hover de tarjetas */
 .category-card:hover img {
     transform: scale(1.05);
 }
@@ -304,18 +271,13 @@ header p {
     left: 0;
     right: 0;
     padding: 0.8rem 1rem;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
     color: #fbbf24;
     font-size: 1.1rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     z-index: 2;
-}
-
-:root[data-theme="light"] .category-title {
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
-    color: #d97706;
 }
 
 .widget h3 {
@@ -342,7 +304,6 @@ header p {
     color: var(--text-primary);
 }
 
-/* Pie de página */
 footer {
     text-align: center;
     padding: 1.5rem;
@@ -355,4 +316,34 @@ footer {
 footer a {
     color: var(--accent-gold);
     text-decoration: none;
+}
+
+.footer-feeds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 0.65rem;
+}
+
+.feed-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--accent-gold);
+    transition: transform 0.2s ease;
+}
+
+.feed-item:hover {
+    transform: scale(1.06);
+}
+
+.feed-item img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    border-radius: 0.25rem;
+    display: block;
 }

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CR7 — Goles y Métricas</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Carga previa del tema -->
+    <link id="theme-css" rel="stylesheet" href="estilos/oscuro.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - CR7" href="sindicacion/rss.xml">
+    <link rel="alternate" type="application/atom+xml" title="Atom 1.0 - CR7" href="sindicacion/atom.xml">
     <script>
         (function() {
             var params = new URLSearchParams(window.location.search);
@@ -15,14 +15,17 @@
                 try { theme = localStorage.getItem('theme'); } catch(e) {}
             }
             if (theme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
+                document.getElementById('theme-css').setAttribute('href', 'estilos/claro.css');
+                try { localStorage.setItem('theme', 'light'); } catch(e) {}
+            } else if (theme === 'dark') {
+                document.getElementById('theme-css').setAttribute('href', 'estilos/oscuro.css');
+                try { localStorage.setItem('theme', 'dark'); } catch(e) {}
             }
         })();
     </script>
 </head>
 <body>
 
-    <!-- Checkbox oculto de control de tema -->
     <input type="checkbox" id="theme-switch" autocomplete="off" hidden>
 
     <div class="site-wrapper">
@@ -35,7 +38,6 @@
             <label for="theme-switch" class="theme-btn">Modo Claro / Oscuro</label>
         </header>
 
-        <!-- Navegación principal -->
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -44,7 +46,6 @@
             </ul>
         </nav>
 
-        <!-- Índice interno de esta sección -->
         <nav class="sub-nav" aria-label="Índice de contenido">
             <ul>
                 <li><a href="#remate">Superficie de Remate</a></li>
@@ -64,8 +65,6 @@
                 <section id="remate" class="card-section">
                     <h2>Desglose por <span>Superficie de Remate</span></h2>
                     <p>Distribución analítica del total de goles convertidos según la superficie del remate en partido oficial:</p>
-
-                    <!-- Tabla de datos (Label + Valor) -->
                     <div class="data-table">
                         <div class="table-row"><span>Pie Derecho</span><strong>570+ goles (~62%)</strong></div>
                         <div class="table-row"><span>Pie Izquierdo</span><strong>170+ goles (~19%)</strong></div>
@@ -75,7 +74,7 @@
                 </section>
 
                 <div class="img-banner">
-                    <img src="goles1.jpg" alt="Remate de Gol">
+                    <img src="imagenes/goles1.jpg" alt="Remate de Gol">
                 </div>
 
                 <section id="jugada" class="card-section">
@@ -90,7 +89,7 @@
                 </section>
 
                 <div class="img-banner">
-                    <img src="goles2.jpg" alt="Celebración de Gol">
+                    <img src="imagenes/goles2.jpg" alt="Celebración de Gol">
                 </div>
 
                 <section id="equipos" class="card-section">
@@ -107,7 +106,7 @@
                 </section>
 
                 <div class="img-banner">
-                    <img src="goles3.jpg" alt="Tiro Libre Directo">
+                    <img src="imagenes/goles3.jpg" alt="Tiro Libre Directo">
                 </div>
 
                 <section id="multiples" class="card-section">
@@ -133,25 +132,24 @@
                 </section>
             </div>
 
-            <!-- Sidebar lateral -->
             <aside class="sidebar">
                 <div class="widget category-widget">
                     <a href="index.html" class="category-card">
-                        <img src="cat_inicio.jpg" alt="Inicio">
+                        <img src="imagenes/cat_inicio.jpg" alt="Inicio">
                         <span class="category-title">Inicio</span>
                     </a>
                 </div>
 
                 <div class="widget category-widget">
                     <a href="goles.html" class="category-card">
-                        <img src="cat_goles.jpg" alt="Goles y Métricas">
+                        <img src="imagenes/cat_goles.jpg" alt="Goles y Métricas">
                         <span class="category-title">Goles y Métricas</span>
                     </a>
                 </div>
 
                 <div class="widget category-widget">
                     <a href="palmares.html" class="category-card">
-                        <img src="cat_palmares.jpg" alt="Palmarés">
+                        <img src="imagenes/cat_palmares.jpg" alt="Palmarés">
                         <span class="category-title">Palmarés</span>
                     </a>
                 </div>
@@ -178,21 +176,21 @@
 
                 <div class="widget category-widget">
                     <a href="https://www.youtube.com/@cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
-                        <img src="youtube.jpg" alt="YouTube">
+                        <img src="imagenes/youtube.jpg" alt="YouTube">
                         <span class="category-title">YouTube</span>
                     </a>
                 </div>
 
                 <div class="widget category-widget">
                     <a href="https://www.instagram.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
-                        <img src="instagram.jpg" alt="Instagram">
+                        <img src="imagenes/instagram.jpg" alt="Instagram">
                         <span class="category-title">Instagram</span>
                     </a>
                 </div>
 
                 <div class="widget category-widget">
                     <a href="https://x.com/cristiano" target="_blank" rel="noopener noreferrer" class="category-card">
-                        <img src="twitter.jpg" alt="Twitter">
+                        <img src="imagenes/twitter.jpg" alt="Twitter">
                         <span class="category-title">Twitter</span>
                     </a>
                 </div>
@@ -202,27 +200,38 @@
 
         <footer>
             <p>&copy; Registro Histórico CR7. Publicado en GitHub Pages.</p>
+            <div class="footer-feeds">
+                <a href="sindicacion/rss.xml" type="application/rss+xml" target="_blank" class="feed-item">
+                    <span>RSS</span>
+                    <img src="imagenes/rss.png" alt="Icono RSS" title="Suscribirse por RSS">
+                </a>
+                <a href="sindicacion/atom.xml" type="application/atom+xml" target="_blank" class="feed-item">
+                    <span>Atom</span>
+                    <img src="imagenes/atom.png" alt="Icono Atom" title="Suscribirse por Atom">
+                </a>
+            </div>
         </footer>
 
     </div>
 
-    <!-- Script de sincronización de tema -->
     <script>
         (function() {
             var switchEl = document.getElementById('theme-switch');
-            
+            var themeLink = document.getElementById('theme-css');
+
             function isLight() {
-                return document.documentElement.getAttribute('data-theme') === 'light';
+                return themeLink.getAttribute('href') === 'estilos/claro.css';
             }
 
             function setTheme(light) {
-                if (light) {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    try { localStorage.setItem('theme', 'light'); } catch(e) {}
-                } else {
-                    document.documentElement.removeAttribute('data-theme');
-                    try { localStorage.setItem('theme', 'dark'); } catch(e) {}
-                }
+                var mode = light ? 'light' : 'dark';
+                themeLink.setAttribute('href', light ? 'estilos/claro.css' : 'estilos/oscuro.css');
+                try { localStorage.setItem('theme', mode); } catch(e) {}
+                try {
+                    var url = new URL(window.location.href);
+                    url.searchParams.set('theme', mode);
+                    window.history.replaceState(null, '', url.toString());
+                } catch(e) {}
                 if (switchEl) switchEl.checked = light;
             }
 
@@ -233,11 +242,21 @@
                 });
             }
 
+            window.addEventListener('pageshow', function(e) {
+                if (e.persisted) {
+                    var saved = null;
+                    try { saved = localStorage.getItem('theme'); } catch(err) {}
+                    if (saved === 'light' || saved === 'dark') {
+                        setTheme(saved === 'light');
+                    }
+                }
+            });
+
             document.addEventListener('click', function(e) {
                 var link = e.target.closest('a[href]');
                 if (!link) return;
                 var href = link.getAttribute('href');
-                if (href && !href.startsWith('http') && !href.startsWith('//') && !href.startsWith('#')) {
+                if (href && !href.startsWith('http') && !href.startsWith('//') && !href.startsWith('#') && !href.endsWith('.xml')) {
                     var currentTheme = isLight() ? 'light' : 'dark';
                     var parts = href.split('#');
                     var path = parts[0].split('?')[0];
