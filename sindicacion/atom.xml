@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
     <title>CR7 G.O.A.T — Registro Histórico Oficial</title>
     <subtitle>Historia, etapas y estadísticas oficiales de Cristiano Ronaldo.</subtitle>
-    <link href="https://gopoda.github.io/Cr7-GOAT/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://gopoda.github.io/Cr7-GOAT/sindicacion/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://gopoda.github.io/Cr7-GOAT/index.html" rel="alternate" type="text/html"/>
     <id>https://gopoda.github.io/Cr7-GOAT/</id>
-    <updated>2026-11-13T10:00:00Z</updated>
+    <updated>2026-11-13T11:50:00Z</updated>
     <author>
         <name>Registro Histórico CR7</name>
     </author>
@@ -13,38 +13,20 @@
     <category term="goles" label="Goles y Métricas"/>
 
     <entry>
-        <title>Resumen General de Carrera de Cristiano Ronaldo</title>
-        <link href="https://gopoda.github.io/Cr7-GOAT/index.html#resumen"/>
-        <id>https://gopoda.github.io/Cr7-GOAT/index.html#resumen</id>
-        <updated>2026-11-11T09:00:00Z</updated>
+        <title>Inicio — Historia y Etapas por Club</title>
+        <link rel="alternate" type="text/html" href="https://gopoda.github.io/Cr7-GOAT/index.html"/>
+        <id>https://gopoda.github.io/Cr7-GOAT/index.html</id>
+        <updated>2026-11-12T09:00:00Z</updated>
         <category term="inicio" label="Inicio"/>
-        <summary>Trayectoria profesional de más de dos décadas en la élite internacional con más de 900 goles oficiales.</summary>
+        <summary>Resumen general de la carrera de Cristiano Ronaldo y recorrido completo por Sporting CP, Manchester United, Real Madrid, Juventus, Al-Nassr y la Selección de Portugal.</summary>
     </entry>
 
     <entry>
-        <title>Etapas por Club y Selección Nacional</title>
-        <link href="https://gopoda.github.io/Cr7-GOAT/index.html#etapas"/>
-        <id>https://gopoda.github.io/Cr7-GOAT/index.html#etapas</id>
-        <updated>2026-11-11T11:00:00Z</updated>
-        <category term="inicio" label="Inicio"/>
-        <summary>Recorrido completo por Sporting CP, Manchester United, Real Madrid, Juventus, Al-Nassr y la Selección de Portugal.</summary>
-    </entry>
-
-    <entry>
-        <title>Desglose de Goles por Superficie y Tipo de Jugada</title>
-        <link href="https://gopoda.github.io/Cr7-GOAT/goles.html#remate"/>
-        <id>https://gopoda.github.io/Cr7-GOAT/goles.html#remate</id>
-        <updated>2026-11-12T15:30:00Z</updated>
+        <title>Goles y Métricas — Estadísticas Oficiales</title>
+        <link rel="alternate" type="text/html" href="https://gopoda.github.io/Cr7-GOAT/goles.html"/>
+        <id>https://gopoda.github.io/Cr7-GOAT/goles.html</id>
+        <updated>2026-11-13T11:00:00Z</updated>
         <category term="goles" label="Goles y Métricas"/>
-        <summary>Estadísticas detalladas de remates con pie derecho, pie izquierdo, cabeza, penaltis y tiros libres.</summary>
-    </entry>
-
-    <entry>
-        <title>Distribución de Goles por Equipos y Métricas Biomecánicas</title>
-        <link href="https://gopoda.github.io/Cr7-GOAT/goles.html#equipos"/>
-        <id>https://gopoda.github.io/Cr7-GOAT/goles.html#equipos</id>
-        <updated>2026-11-13T09:00:00Z</updated>
-        <category term="goles" label="Goles y Métricas"/>
-        <summary>Registros goleadores por club y datos físicos destacados como el salto vertical de 2,93 m y velocidad punta.</summary>
+        <summary>Desglose analítico por superficie de remate, tipo de jugada, distribución por equipos, partidos con múltiples goles y métricas biomecánicas.</summary>
     </entry>
 </feed>

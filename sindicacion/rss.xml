@@ -7,43 +7,25 @@
         <language>es-es</language>
         <category>Inicio</category>
         <category>Goles y Métricas</category>
-        <lastBuildDate>Fri, 13 Nov 2026 11:00:00 +0100</lastBuildDate>
-        <atom:link href="https://gopoda.github.io/Cr7-GOAT/rss.xml" rel="self" type="application/rss+xml" />
+        <lastBuildDate>Fri, 13 Nov 2026 12:50:00 +0100</lastBuildDate>
+        <atom:link href="https://gopoda.github.io/Cr7-GOAT/sindicacion/rss.xml" rel="self" type="application/rss+xml" />
 
         <item>
-            <title>Resumen General de Carrera de Cristiano Ronaldo</title>
-            <link>https://gopoda.github.io/Cr7-GOAT/index.html#resumen</link>
-            <description>Trayectoria profesional de más de dos décadas en la élite internacional con más de 900 goles oficiales.</description>
+            <title>Inicio — Historia y Etapas por Club</title>
+            <link>https://gopoda.github.io/Cr7-GOAT/index.html</link>
+            <description>Resumen general de la carrera de Cristiano Ronaldo y recorrido completo por Sporting CP, Manchester United, Real Madrid, Juventus, Al-Nassr y la Selección de Portugal.</description>
             <category>Inicio</category>
-            <guid>https://gopoda.github.io/Cr7-GOAT/index.html#resumen</guid>
-            <pubDate>Wed, 11 Nov 2026 10:00:00 +0100</pubDate>
+            <guid>https://gopoda.github.io/Cr7-GOAT/index.html</guid>
+            <pubDate>Thu, 12 Nov 2026 10:00:00 +0100</pubDate>
         </item>
 
         <item>
-            <title>Etapas por Club y Selección Nacional</title>
-            <link>https://gopoda.github.io/Cr7-GOAT/index.html#etapas</link>
-            <description>Recorrido completo por Sporting CP, Manchester United, Real Madrid, Juventus, Al-Nassr y la Selección de Portugal.</description>
-            <category>Inicio</category>
-            <guid>https://gopoda.github.io/Cr7-GOAT/index.html#etapas</guid>
-            <pubDate>Wed, 11 Nov 2026 12:00:00 +0100</pubDate>
-        </item>
-
-        <item>
-            <title>Desglose de Goles por Superficie y Tipo de Jugada</title>
-            <link>https://gopoda.github.io/Cr7-GOAT/goles.html#remate</link>
-            <description>Estadísticas detalladas de remates con pie derecho, pie izquierdo, cabeza, penaltis y tiros libres.</description>
+            <title>Goles y Métricas — Estadísticas Oficiales</title>
+            <link>https://gopoda.github.io/Cr7-GOAT/goles.html</link>
+            <description>Desglose analítico por superficie de remate, tipo de jugada, distribución por equipos, partidos con múltiples goles y métricas biomecánicas.</description>
             <category>Goles y Métricas</category>
-            <guid>https://gopoda.github.io/Cr7-GOAT/goles.html#remate</guid>
-            <pubDate>Thu, 12 Nov 2026 16:30:00 +0100</pubDate>
-        </item>
-
-        <item>
-            <title>Distribución de Goles por Equipos y Métricas Biomecánicas</title>
-            <link>https://gopoda.github.io/Cr7-GOAT/goles.html#equipos</link>
-            <description>Registros goleadores por club y datos físicos destacados como el salto vertical de 2,93 m y velocidad punta.</description>
-            <category>Goles y Métricas</category>
-            <guid>https://gopoda.github.io/Cr7-GOAT/goles.html#equipos</guid>
-            <pubDate>Fri, 13 Nov 2026 10:00:00 +0100</pubDate>
+            <guid>https://gopoda.github.io/Cr7-GOAT/goles.html</guid>
+            <pubDate>Fri, 13 Nov 2026 12:00:00 +0100</pubDate>
         </item>
     </channel>
 </rss>
